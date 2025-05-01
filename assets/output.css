@@ -1,0 +1,169 @@
+/*! tailwindcss v4.1.4 | MIT License | https://tailwindcss.com */
+@layer base {
+  :root {
+    --text-50: #f1f0f4;
+    --text-100: #e3e1ea;
+    --text-200: #c7c4d4;
+    --text-300: #aba6bf;
+    --text-400: #8f89a9;
+    --text-500: #736b94;
+    --text-600: #5c5676;
+    --text-700: #454059;
+    --text-800: #2e2b3b;
+    --text-900: #17151e;
+    --text-950: #0c0b0f;
+
+    --background-50: #f0eef6;
+    --background-100: #e0ddee;
+    --background-200: #c2bbdd;
+    --background-300: #a399cc;
+    --background-400: #8577bb;
+    --background-500: #6655aa;
+    --background-600: #524488;
+    --background-700: #3d3366;
+    --background-800: #292244;
+    --background-900: #141122;
+    --background-950: #0a0911;
+
+    --primary-50: #efecf8;
+    --primary-100: #e0d9f2;
+    --primary-200: #c1b4e4;
+    --primary-300: #a18ed7;
+    --primary-400: #8268ca;
+    --primary-500: #6342bd;
+    --primary-600: #4f3597;
+    --primary-700: #3b2871;
+    --primary-800: #281b4b;
+    --primary-900: #140d26;
+    --primary-950: #0a0713;
+
+    --secondary-50: #efeafa;
+    --secondary-100: #ded5f6;
+    --secondary-200: #bdacec;
+    --secondary-300: #9c82e3;
+    --secondary-400: #7b59d9;
+    --secondary-500: #5a2fd0;
+    --secondary-600: #4826a6;
+    --secondary-700: #361c7d;
+    --secondary-800: #241353;
+    --secondary-900: #12092a;
+    --secondary-950: #090515;
+
+    --accent-50: #eee8fc;
+    --accent-100: #dcd1fa;
+    --accent-200: #b9a4f4;
+    --accent-300: #9676ef;
+    --accent-400: #7348ea;
+    --accent-500: #501be4;
+    --accent-600: #4015b7;
+    --accent-700: #301089;
+    --accent-800: #200b5b;
+    --accent-900: #10052e;
+    --accent-950: #080317;
+  }
+  .dark {
+    --text-50: #0c0b0f;
+    --text-100: #17151e;
+    --text-200: #2e2b3b;
+    --text-300: #454059;
+    --text-400: #5c5676;
+    --text-500: #736b94;
+    --text-600: #8f89a9;
+    --text-700: #aba6bf;
+    --text-800: #c7c4d4;
+    --text-900: #e3e1ea;
+    --text-950: #f1f0f4;
+
+    --background-50: #0b0910;
+    --background-100: #151221;
+    --background-200: #2a2442;
+    --background-300: #3f3663;
+    --background-400: #544884;
+    --background-500: #695ba4;
+    --background-600: #877bb7;
+    --background-700: #a59cc9;
+    --background-800: #c3bddb;
+    --background-900: #e1deed;
+    --background-950: #f0eff6;
+
+    --primary-50: #0a0713;
+    --primary-100: #140d26;
+    --primary-200: #281b4b;
+    --primary-300: #3b2871;
+    --primary-400: #4f3597;
+    --primary-500: #6342bd;
+    --primary-600: #8268ca;
+    --primary-700: #a18ed7;
+    --primary-800: #c1b4e4;
+    --primary-900: #e0d9f2;
+    --primary-950: #efecf8;
+
+    --secondary-50: #090515;
+    --secondary-100: #12092a;
+    --secondary-200: #241254;
+    --secondary-300: #361c7d;
+    --secondary-400: #4825a7;
+    --secondary-500: #592ed1;
+    --secondary-600: #7b58da;
+    --secondary-700: #9c82e3;
+    --secondary-800: #bdabed;
+    --secondary-900: #ded5f6;
+    --secondary-950: #eeeafa;
+
+    --accent-50: #080317;
+    --accent-100: #10052e;
+    --accent-200: #200b5b;
+    --accent-300: #301089;
+    --accent-400: #4015b7;
+    --accent-500: #501be4;
+    --accent-600: #7348ea;
+    --accent-700: #9676ef;
+    --accent-800: #b9a4f4;
+    --accent-900: #dcd1fa;
+    --accent-950: #eee8fc;
+  }
+}
+
+@layer properties;
+.visible {
+  visibility: visible;
+}
+.transform {
+  transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z)
+    var(--tw-skew-x) var(--tw-skew-y);
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or
+    ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
+    *,
+    ::before,
+    ::after,
+    ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+    }
+  }
+}
