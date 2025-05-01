@@ -5,6 +5,15 @@ const MAIN_CSS: Asset = asset!("/assets/main.css");
 const MN_LOGO: Asset = asset!("/assets/mn_logo_grad_circle.png");
 const MN_LOGO_NO_TEXT: Asset = asset!("/assets/mn_logo_grad_circle_notext_background.png");
 
+const _: Asset = asset!("/assets/fonts/ProximaNova-Regular.otf");
+const _: Asset = asset!("/assets/fonts/ProximaNova-Bold.otf");
+const _: Asset = asset!("/assets/favicon-32x32.png");
+const _: Asset = asset!("/assets/favicon-16x16.png");
+const _: Asset = asset!("/assets/apple-touch-icon.png");
+const _: Asset = asset!("/assets/android-chrome-192x192.png");
+const _: Asset = asset!("/assets/android-chrome-512x512.png");
+const _: Asset = asset!("/assets/site.webmanifest");
+
 const TAILWIND_CSS: Asset = asset!("/assets/tailwind.css");
 
 mod discord_logo;

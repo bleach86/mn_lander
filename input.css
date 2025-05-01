@@ -4,14 +4,15 @@
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("fonts/ProximaNova-Regular.otf") format("opentype");
+  src: url("/assets/ProximaNova-Regular-67f0feaa6ec39a98.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Proxima Nova Bold";
-  src: url("fonts/ProximaNova-Bold.otf") format("opentype");
+  src: url("/assets/ProximaNova-Bold-67d777977b0ea3bb.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
