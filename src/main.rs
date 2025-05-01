@@ -27,6 +27,7 @@ fn App() -> Element {
         document::Link { rel: "icon", href: FAVICON }
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         document::Link { rel: "stylesheet", href: TAILWIND_CSS }
+
         Navbar {}
         Hero {}
         Footer {}
@@ -59,7 +60,6 @@ pub fn Hero() -> Element {
                 p { "Users trade against the bonding curve, not the devs." }
                 p { "Fully vested bonding curves graduate to a UniswapV4 liquidity pool." }
             }
-
         }
     }
 }
