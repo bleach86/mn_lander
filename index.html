@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{app_title}</title>
+    <title>MoonNinja</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="/static/assets/css/tailwind.css" rel="stylesheet" />
+    <link href="/static/assets/css/style.css" rel="stylesheet" />
+
     <meta charset="UTF-8" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/apple-touch-icon-bf7244151bc644f2.png"
+      href="/static/assets/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/assets/favicon-32x32-6c4f44c0c8f84322.png"
+      href="/static/assets/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/favicon-16x16-72ee6c532806a524.png"
+      href="/static/assets/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/site-fd1ec114924c9d7a.webmanifest" />
+    <link rel="manifest" href="/static/assets/site.webmanifest" />
     <meta
       name="description"
       content="MoonNinja: Token creation and fair launch platform."
@@ -38,7 +42,7 @@
     />
     <meta
       property="og:image"
-      content="https://moon.ninja/assets/mn_logo_grad_circle_notext_background-0cb2bf2237b5353a.png"
+      content="/static/assets/img/mn_logo_grad_circle_filled_text.png"
     />
     <meta property="og:url" content="https://moon.ninja" />
     <meta property="og:type" content="website" />
@@ -51,11 +55,739 @@
     />
     <meta
       name="twitter:image"
-      content="https://moon.ninja/assets/mn_logo_grad_circle_notext_background-0cb2bf2237b5353a.png"
+      content="/static/assets/img/mn_logo_grad_circle_filled_text.png"
     />
     <meta name="twitter:url" content="https://moon.ninja" />
   </head>
-  <body style="background-color: #040410">
-    <div id="main"></div>
+  <body>
+    <main
+      id="main-content"
+      class="mt-16 bg-radial from-violet-950 to-base-100 transition-all duration-500 xl:duration-1000 ease-in-out"
+    >
+      <nav class="fixed top-0 z-50 w-full bg-base-200">
+        <div class="px-3 py-3 lg:px-5 lg:pl-3">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center justify-start w-full">
+              <a href="#" class="flex ms-2 md:me-24">
+                <img
+                  src="/static/assets/img/mn_logo_grad_circle_notext_background.png"
+                  class="h-11 me-3"
+                  alt="MoonNinja Logo"
+                />
+                <span
+                  class="self-center text-xl font-bold-custom sm:text-2xl whitespace-nowrap gradient-text"
+                  >MoonNinja</span
+                >
+              </a>
+            </div>
+            <div class="flex items-center">
+              <appkit-button />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container mx-auto px-4 py-8">
+        <div class="flex flex-col text-center w-full">
+          <img
+            class="max-h-128 max-w-2xs md:max-w-sm lg:max-w-md mx-auto animate-jump-in animate-once animate-duration-2000"
+            src="/static/assets/img/mn_logo_grad_circle_transparent_bg.png"
+          />
+          <h1
+            class="text-4xl font-bold mt-4 mb-2 gradient-text animate-fade-left animate-delay-2000"
+          >
+            Decentralized token creation and fair launch platform.
+          </h1>
+          <h5
+            class="text-md md:text-lg text-center text-info animate-fade-right animate-delay-2500"
+          >
+            Coming summer 2025
+          </h5>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 pb-2 flex flex-col items-center">
+        <div class="flex flex-col items-center">
+          <p
+            class="text-2xl font-bold mb-2 text-white text-center animate-fade-up animate-delay-3000"
+          >
+            Why <span class="gradient-text">MoonNinja</span> is the best choice?
+          </p>
+        </div>
+        <div class="arrow bounce flex flex-col justify-center items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            viewBox="0 0 512 266.77"
+            class="w-12 h-12 animate-fade-up animate-delay-4000"
+          >
+            <defs>
+              <linearGradient id="grad45" gradientTransform="rotate(45)">
+                <stop offset="0%" stop-color="#ccccff" />
+                <stop offset="100%" stop-color="#7b3cc3" />
+              </linearGradient>
+            </defs>
+            <path
+              fill="url(#grad45)"
+              fill-rule="nonzero"
+              d="M493.12 3.22c4.3-4.27 11.3-4.3 15.62-.04a10.85 10.85 0 0 1 .05 15.46L263.83 263.55c-4.3 4.28-11.3 4.3-15.63.05L3.21 18.64a10.85 10.85 0 0 1 .05-15.46c4.32-4.26 11.32-4.23 15.62.04L255.99 240.3 493.12 3.22z"
+            />
+          </svg>
+        </div>
+        <div class="animate-fade-up animate-delay-5050 animate-infinite">
+          <div
+            class="relative -top-15 sm:-top-20 h-16 w-16 bg-transparent border-2 border-primary/60 rounded-full animate-ping animate-infinite animate-delay-5050 animate-duration-[2000ms] animate-ease-in-out animate-normal"
+          ></div>
+        </div>
+      </section>
+      <section id="customizeable" class="container max-w-4xl mx-auto px-4 pb-4">
+        <div
+          class="animate-body opacity-0 p-4 transition-opacity duration-300 ease-in-out card bg-base-100 rounded-lg border-1 border-gray-600 flex flex-col items-center"
+        >
+          <h1
+            class="opacity-0 transition-opacity duration-300 ease-in-out text-3xl gradient-text"
+          >
+            Highly Customizeable
+          </h1>
+          <p
+            class="opacity-0 transition-opacity duration-300 ease-in-out text-gray-400 text-lg text-center mt-2"
+          >
+            <span class="gradient-text">MoonNinja</span> allows anyone to create
+            a custom token with a few clicks.
+          </p>
+          <p
+            class="opacity-0 transition-opacity duration-300 ease-in-out text-gray-400 text-lg text-center mt-2"
+          >
+            No coding required!
+          </p>
+          <div class="grid grid-cols-2 gap-6 text-xs">
+            <!-- Column 1 -->
+            <ul class="list-disc list-inside text-center text-base space-y-4">
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Name</span>
+                <p class="text-xs text-gray-500">Up to 36 characters.</p>
+              </li>
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Symbol</span>
+                <p class="text-xs text-gray-500">Up to 10 characters.</p>
+              </li>
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Decimals</span>
+                <p class="text-xs text-gray-500">Up to 36 places.</p>
+              </li>
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Supply</span>
+                <p class="text-xs text-gray-500">1-100 Billion.</p>
+              </li>
+
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Description</span>
+                <p class="text-xs text-gray-500">Tell us about your token.</p>
+              </li>
+            </ul>
+
+            <!-- Column 2 -->
+            <ul class="list-disc list-inside text-center text-base space-y-4">
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Gasless Approval</span>
+                <p class="text-xs text-gray-500">
+                  Allow users to approve your token without gas fees.
+                </p>
+              </li>
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Burnable</span>
+                <p class="text-xs text-gray-500">
+                  A portion, or all of the fees can be burned.
+                </p>
+                <p class="text-xs text-gray-500">Can also be triggered manually.</p>
+              </li>
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Liquidity Pool Fee</span>
+                <p class="text-xs text-gray-500">
+                  Choose the liquidity pool fee for graduation.
+                </p>
+              </li>
+              <li class="opacity-0 transition-opacity duration-300 ease-in-out">
+                <span class="text-info">Optional Custom Fees</span>
+                <p class="text-xs text-gray-500">
+                  Charge a custom buy/sell or transfer fee.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="fair-launch"
+        class="container max-w-4xl mx-auto px-4 pb-2 mt-8"
+      >
+        <h1
+          class="text-3xl font-bold text-center mb-4 gradient-text opacity-0 transition-opacity duration-300 ease-in-out"
+        >
+          Fair Launch
+        </h1>
+        <div class="divider"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="max-w-sm p-2 opacity-0 fair-launch-card transition-opacity duration-300 ease-in-out"
+          >
+            <svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 122.88 118.19"
+              class="w-12 h-12"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <title>loan</title>
+              <path
+                class="cls-1 fill-gray-600"
+                d="M103.91,75.47,79.13,88.28,77.39,85,95.1,75.86l.23-.11A3.49,3.49,0,0,0,96.78,71l-.84-1.58.06,
+              0-4.07-7.52L76.12,32.11l3.73-1.94,24.06,45.3Zm7.18,8.66h10.74a1,1,0,0,1,1,1.05v26.06a1.07,1.07,0,0,1-1,1.06H111.09a1.07,
+              1.07,0,0,1-1.06-1.06V85.18a1.06,1.06,0,0,1,1.06-1.05ZM106.59,110V86.47H96c-4.49.81-9,3.24-13.47,6.07H74.31c-3.73.22-5.68,
+              4-2.06,6.48,2.89,2.11,6.69,2,10.59,1.64,2.69-.13,2.81,3.48,0,3.49-1,.08-2-.15-3-.15-4.87,0-8.87-.94-11.32-4.78l-1.24-2.88L55.09,
+              90.28c-6.12-2-10.47,4.39-6,8.84a160.53,160.53,0,0,0,27.24,16c6.75,4.11,13.51,4,20.25,0l10-5.15ZM14.49,9.5a1.9,1.9,0,0,1,.31-1.18C15.45,
+              7.45,17,7.7,18,7.7a14.49,14.49,0,0,0,3.08-.24A35.78,35.78,0,0,0,25.48,6c3.73-1.34,7.08-2.33,10.64-3.62,8-2.87,5.6-3.49,13.81,0A89.24,
+              89.24,0,0,1,60.24,7.55a6.45,6.45,0,0,1,1.31.94,6.19,6.19,0,0,1,1,1.32c3.14,4.57,5.83,9.2,8.41,13.83.87,1.63,1.23,3.17.64,4.14-2.43,
+              4-6.8-1.69-11.5-5.46-2-1.59-4.67-3-7-4.61-3-1.24-4.36-2.42-7.55-3.09-4.89-.42-5.29,6.6,1.14,6.86C51,21.65,60,25.61,62.56,29.25c2.36,
+              3.4,1.06,6.74-3.74,6.62l-4-.75c-6.39-1.2-6.21-1.44-12.86-.2-3.57.66-7.31,1.35-11,.66-2.24-.41-3.42-1.31-5.42-2.84a17.81,17.81,0,0,
+              0-3.18-2.22,12,12,0,0,0-2.92-1.24c-1.53-.37-3.69.15-4.58-1.17a2.4,2.4,0,0,1-.37-1.31V9.5ZM1,5.16H11a1,1,0,0,1,1,1V30.44a1,1,0,0,1-1,
+              1H1a1,1,0,0,1-1-1V6.15a1,1,0,0,1,1-1ZM69,50.75a6.79,6.79,0,1,1-6.78,6.78A6.79,6.79,0,0,1,69,50.75Zm3.12-19L94,73,67.6,86.66,43.89,
+              42.07l8.33-4.31.29.06,5.75,1.07a2.63,2.63,0,0,0,.49,0,10.47,10.47,0,0,0,3.12-.35L54.31,42.5a4.4,4.4,0,0,1-1.88,5.93L67.34,
+              76a4.4,4.4,0,0,1,5.93,1.88l10.44-5.41a4.39,4.39,0,0,1,1.88-5.92L70.69,39h0a4.4,4.4,0,0,1-5.93-1.89l-.14.08a6,6,0,0,0,1.45-1.79,
+              6.37,6.37,0,0,0,.71-2.79,7,7,0,0,0,0-1c2,1,3.75,1.18,5.35.15Z"
+              />
+            </svg>
+
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-info">
+              No Pre-Sale
+            </h5>
+
+            <p class="mb-3 font-normal text-gray-300">
+              No pre-sale, no private sale, no seed round. Everyone gets the
+              same chance to buy in at the same time.
+            </p>
+          </div>
+
+          <div
+            class="max-w-sm p-2 opacity-0 fair-launch-card transition-opacity duration-300 ease-in-out"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              viewBox="0 0 512 283.4"
+              class="w-12 h-12"
+            >
+              <path
+                class="fill-gray-600"
+                d="M417.22 240.9c15.67-1.72 29.89-9.47 35.23-23.8 41.62 26.61 59.55 9.73 59.55 66.3h-90.99c0-18.11-1.26-31.84-3.79-42.5zm-305.11 42.5c5.89-76.2 19.74-48.02 85.11-88.92 20.19 42.13 102.24 45.19 119.07 0 56.41 36.07 83.6 12.25 83.6 88.92H112.11zm100.52-92.24c-.87-1.13 2.28-8.89 3.02-10.14-8.54-7.6-15.28-15.27-16.72-31.05l-.92.02c-2.11-.02-4.15-.51-6.06-1.6-3.06-1.74-5.21-4.73-6.66-8.09-3.08-7.07-13.21-30.52 2.22-28.67-8.62-16.11 10.91-43.64-22.78-53.82 27.64-35.01 85.95-88.98 128.68-34.84 46.77 4.53 61.36 60.12 29.87 90.56 1.84.07 3.58.5 5.12 1.32 5.86 3.14 6.05 9.94 4.51 15.65-1.52 4.77-3.46 8-5.28 12.65-2.22 6.28-5.46 7.45-11.72 6.77-.32 15.53-7.49 23.15-17.15 32.26l2.64 8.95c-12.94 27.46-66.72 28.57-88.77.03zM0 283.4c4.34-56.23 12.43-36.12 60.67-66.3 6.28 13.11 20.68 21.09 36.16 23.44-2.53 9.96-4.3 22.89-5.66 40.13-.11.89-.17 1.8-.17 2.73H0zm72.04-68.75c-.65-.83 1.68-6.56 2.23-7.48-6.3-5.61-11.28-11.27-12.34-22.91l-.68.01c-1.56-.02-3.07-.38-4.48-1.18-2.25-1.28-3.84-3.49-4.91-5.97-2.27-5.21-9.74-22.52 1.64-21.15-6.36-11.89 8.05-32.21-16.81-39.72 20.4-25.83 63.42-65.65 94.95-25.71 34.52 3.35 45.28 44.37 22.04 66.83 1.36.05 2.65.36 3.78.97 4.32 2.32 4.47 7.34 3.33 11.55-1.12 3.52-2.55 5.9-3.89 9.34-1.64 4.63-4.03 5.49-8.66 4.99-.1 5.32-1.3 9.38-3.27 12.87l-2.96 1.17c-21.79 8.53-34.18 13.39-41.66 31.45-10.92-1.42-21.61-6.38-28.31-15.06zm297.1-18.3c-1.67-3.25-2.84-7.13-3.29-12.09l-.68.01c-1.56-.02-3.07-.38-4.47-1.18-2.26-1.28-3.85-3.49-4.92-5.97-2.27-5.21-9.74-22.52 1.65-21.15-6.37-11.89 8.04-32.21-16.82-39.72 20.4-25.83 63.42-65.65 94.96-25.71 34.51 3.35 45.28 44.37 22.04 66.83 1.36.05 2.64.36 3.78.97 4.32 2.32 4.46 7.34 3.32 11.55-1.12 3.52-2.55 5.9-3.89 9.34-1.64 4.63-4.03 5.49-8.65 4.99-.24 11.46-5.53 17.08-12.66 23.81l1.95 6.6c-4.46 9.47-15.51 14.69-27.67 15.42-8.04-19.6-22.85-25.57-44.65-33.7z"
+              />
+            </svg>
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-info">
+              Community-Owned
+            </h5>
+            <p class="mb-3 font-normal text-gray-300">
+              100% of the tokens are available to the public. No team
+              allocations or VC bags—just pure memecoin energy.
+            </p>
+          </div>
+
+          <div class="max-w-sm p-2 opacity-0 fair-launch-card">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 78.99 122.88"
+              style="enable-background: new 0 0 78.99 122.88"
+              xml:space="preserve"
+              class="h-12 w-12"
+            >
+              <g>
+                <path
+                  class="fill-gray-600"
+                  d="M28,58.2c-0.04-0.13-0.09-0.3-0.11-0.45c-0.24-2.05-0.47-4.31-0.67-6.26c-0.28-2.86-0.6-6.16-0.82-8.48 c-0.15-1.57-0.65-3.06-1.38-4.18c-0.49-0.71-1.03-1.25-1.64-1.51c-0.49-0.19-1.08-0.22-1.7,0.02c-0.84,0.32-1.79,1.01-2.84,2.2 c-0.93,1.06-1.66,2.48-2.26,3.98c-0.86,2.2-1.36,4.54-1.57,6.14c-0.02,0.11-0.02,0.19-0.06,0.28L9.12,83.02 c-0.09,0.43-0.26,0.82-0.52,1.12c-1.96,2.52-3.19,4.69-3.55,6.44c-0.26,1.29,0,2.33,0.86,3.14l21.44,21.44 c1.36,1.31,2.95,2.13,4.84,2.48c2.07,0.39,4.48,0.17,7.26-0.58c0.04,0,0.11-0.02,0.15-0.02c1.05-0.28,2.43-0.62,3.75-0.95 c5.75-1.4,10.76-2.63,15.41-6.85l5.98-6.24c0.06-0.11,0.15-0.19,0.24-0.28c0.09-0.09,0.67-0.67,1.46-1.42 c4.09-4,9.15-8.93,6.07-13.26l-2.39-2.39c-1.16,1.12-2.39,2.22-3.57,3.27c-1.08,0.95-2.09,1.83-3.01,2.76 c-0.99,0.99-2.58,0.99-3.57,0c-0.99-0.99-0.99-2.58,0-3.57c0.93-0.93,2.07-1.94,3.25-2.99c4.05-3.57,8.7-7.66,6.2-11.24l-2.37-2.37 c-0.13-0.13-0.24-0.28-0.34-0.43c-1.36,1.4-2.86,2.73-4.33,4.03c-1.08,0.95-2.09,1.83-3.01,2.76c-0.99,0.99-2.58,0.99-3.57,0 c-0.99-0.99-0.99-2.58,0-3.57c0.93-0.93,2.07-1.94,3.25-2.99c4.05-3.57,8.7-7.66,6.2-11.24l-2.37-2.37 c-0.17-0.17-0.3-0.34-0.41-0.54l-6.95,6.95c-0.99,0.99-2.58,0.99-3.57,0c-0.99-0.99-0.99-2.58,0-3.57L70.6,41.86 c3.12-3.12,3.83-6.37,3.01-8.83c-0.3-0.9-0.8-1.7-1.42-2.32c-0.62-0.62-1.42-1.12-2.32-1.42c-2.43-0.8-5.66-0.06-8.87,3.14 l-32.7,32.7c-0.99,0.99-2.58,0.99-3.57,0c-0.99-0.99-0.99-2.58,0-3.57l3.32-3.32L28,58.2L28,58.2z M40.73,0l1.84,19.94l-5.61,0.51 L35.13,0.51L40.73,0L40.73,0z M66.95,8.97L53.97,24.59l-4.33-3.6L62.62,5.37L66.95,8.97L66.95,8.97z M16,11.84l15.43,12.82 l-3.6,4.33L12.4,16.17L16,11.84L16,11.84z M65.93,53.68c0.19,0.11,0.37,0.24,0.54,0.41l2.48,2.48c0.13,0.13,0.26,0.3,0.37,0.45 c2.78,3.81,2.35,7.21,0.45,10.31c0.34,0.13,0.67,0.32,0.93,0.58l2.48,2.48c0.13,0.13,0.26,0.3,0.37,0.45 c2.99,4.11,2.24,7.71,0,10.98c0.11,0.06,0.19,0.15,0.3,0.26l2.48,2.48c0.13,0.13,0.26,0.3,0.37,0.45 c5.75,7.86-1.1,14.53-6.61,19.91l-1.42,1.42l-6.14,6.44l-0.19,0.19c-5.62,5.1-11.19,6.46-17.63,8.03 c-1.08,0.26-2.17,0.54-3.68,0.93c-0.04,0-0.06,0.02-0.11,0.02c-3.49,0.95-6.65,1.18-9.49,0.67c-2.88-0.52-5.38-1.81-7.47-3.85 L2.51,97.34c-2.17-2.09-2.91-4.67-2.3-7.73c0.47-2.45,1.89-5.17,4.13-8.09l5.73-32.42v-0.13c0.26-1.85,0.84-4.59,1.85-7.23 c0.77-1.98,1.81-3.92,3.16-5.49c1.64-1.85,3.25-2.99,4.84-3.6c1.96-0.75,3.83-0.65,5.49,0.06c1.55,0.65,2.86,1.83,3.85,3.34 c1.21,1.81,2,4.11,2.22,6.52c0.17,1.98,0.52,5.25,0.84,8.46l0.26,2.67L57.4,28.88c4.76-4.76,9.92-5.71,14.04-4.35 c1.66,0.54,3.12,1.44,4.33,2.65c1.21,1.21,2.11,2.67,2.65,4.33c1.36,4.11,0.43,9.34-4.24,14.02l-8.22,8.22L65.93,53.68L65.93,53.68 z"
+                />
+              </g>
+            </svg>
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-info">
+              Instant Launch
+            </h5>
+            <p class="mb-3 font-normal text-gray-300">
+              No waiting. Tokens go live immediately—buy, sell, and trade from
+              block one.
+            </p>
+          </div>
+
+          <div
+            class="max-w-sm p-2 opacity-0 fair-launch-card transition-opacity duration-300 ease-in-out"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              viewBox="0 0 401 512.4"
+              class="h-12 w-12"
+            >
+              <path
+                class="fill-gray-600"
+                fill-rule="nonzero"
+                d="m261.62 459.97 89.57-94.14h-89.57v94.14zM78.95 258.29h243.1v23.06H78.95v-23.06zm0 58.55h113.79v23.06H78.95v-23.06zm0 58.57h80.17v23.05H78.95v-23.05zM401 353.8 258.23 506.91a14.808 14.808 0 0 1-11.51 5.49H26.81C11.98 512.4 0 500.42 0 485.59V26.8C0 12.01 12 0 26.81 0H374.2C389 0 401 12.01 401 26.8v327zm-26.17-14.14V26.17H26.17v460.19h209.28V354.69c0-8.23 6.67-15.03 15.04-15.03h124.34z"
+              />
+              <path
+                class="fill-accent"
+                d="M200.5 64.49c42.22 0 76.43 34.23 76.43 76.43 0 42.22-34.23 76.42-76.43 76.42-42.22 0-76.43-34.22-76.43-76.42 0-42.23 34.23-76.43 76.43-76.43zm-23.72 64.28 13.55 12.8 32.01-32.45c2.66-2.7 4.32-4.86 7.59-1.49l10.61 10.87c3.49 3.45 3.32 5.47.02 8.68l-44.17 43.46c-6.93 6.8-5.72 7.21-12.76.24l-24.71-24.58c-1.47-1.59-1.31-3.19.29-4.77l12.33-12.78c1.86-1.97 3.35-1.79 5.24.02z"
+              />
+            </svg>
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-info">
+              Verified Contracts
+            </h5>
+            <p class="mb-3 font-normal text-gray-300">
+              All contracts are on-chain and verified. No backdoors. You see
+              what you get.
+            </p>
+          </div>
+
+          <div
+            class="max-w-sm p-2 opacity-0 fair-launch-card transition-opacity duration-300 ease-in-out"
+          >
+            <?xml version="1.0" encoding="utf-8"?><svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="111.811px"
+              height="122.88px"
+              viewBox="0 0 111.811 122.88"
+              enable-background="new 0 0 111.811 122.88"
+              xml:space="preserve"
+              class="h-12 w-12"
+            >
+              <g>
+                <path
+                  class="fill-gray-600"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M55.713,0c20.848,13.215,39.682,19.467,55.846,17.989 c2.823,57.098-18.263,90.818-55.63,104.891C19.844,109.708-1.5,77.439,0.083,17.123C19.058,18.116,37.674,14.014,55.713,0L55.713,0 z M41.458,55.503h1.438v-3.331c0-3.689,1.454-7.051,3.797-9.494c2.361-2.462,5.622-3.991,9.214-3.991s6.854,1.529,9.214,3.991 c2.343,2.443,3.797,5.805,3.797,9.494v3.331h1.438c1.167,0,2.123,0.955,2.123,2.123V80.06c0,1.168-0.956,2.123-2.123,2.123H41.458 c-1.168,0-2.123-0.955-2.123-2.123V57.626C39.334,56.458,40.29,55.503,41.458,55.503L41.458,55.503z M46.916,55.503h17.981v-3.331 c0-2.623-1.021-4.999-2.666-6.715c-1.627-1.697-3.866-2.75-6.325-2.75c-2.458,0-4.698,1.054-6.324,2.75 c-1.646,1.716-2.666,4.093-2.666,6.715V55.503L46.916,55.503z M54.164,70.281l-2.291,6h8.066l-2.122-6.082 c1.347-0.693,2.268-2.097,2.268-3.716c0-2.308-1.871-4.179-4.179-4.179s-4.178,1.871-4.178,4.179 C51.728,68.168,52.726,69.62,54.164,70.281L54.164,70.281z M55.735,7.055c18.454,11.697,35.126,17.232,49.434,15.923 c2.498,50.541-16.166,80.39-49.241,92.846C23.986,104.165,5.091,75.603,6.493,22.211C23.29,23.091,39.768,19.46,55.735,7.055 L55.735,7.055z"
+                />
+              </g>
+            </svg>
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-info">
+              Locked Liquidity
+            </h5>
+            <p class="mb-3 font-normal text-gray-300">
+              Liquidity is locked forever, ensuring your token is safe from rug
+              pulls and exit scams.
+            </p>
+          </div>
+
+          <div
+            class="max-w-sm p-2 opacity-0 fair-launch-card transition-opacity duration-300 ease-in-out"
+          >
+            <?xml version="1.0" encoding="utf-8"?><svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 122.88 90.82"
+              style="enable-background: new 0 0 122.88 90.82"
+              xml:space="preserve"
+              class="h-12 w-12"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                }
+              </style>
+              <g>
+                <path
+                  class="st0 fill-gray-600"
+                  d="M121.57,40.15c0.85,1.42,1.31,2.94,1.31,4.51c0,8.34-12.9,15.1-28.8,15.1c-15.9,0-28.8-6.76-28.8-15.1 c0-1.57,0.46-3.09,1.31-4.51c3.66,6.13,14.58,10.59,27.49,10.59C106.99,50.74,117.91,46.29,121.57,40.15L121.57,40.15z M56.29,62.64c0.85,1.43,1.31,2.94,1.31,4.51c0,8.34-12.9,15.1-28.8,15.1C12.9,82.25,0,75.49,0,67.15c0-1.57,0.46-3.09,1.31-4.51 c3.66,6.13,14.59,10.59,27.49,10.59C41.71,73.23,52.63,68.78,56.29,62.64L56.29,62.64z M32.98,40.56l-0.06-3.74 c0.85-0.03,1.54-0.29,2.07-0.77c0.54-0.48,0.83-1.06,0.89-1.74c0.07-0.78-0.19-1.46-0.77-2.06c-0.58-0.59-1.52-0.95-2.79-1.06 c-1.19-0.1-2.11,0.09-2.75,0.57c-0.64,0.48-1,1.15-1.07,2.01c-0.09,1.07,0.3,2.07,1.17,3l-0.7,2.98l-9.94-2.79l0.85-9.84l3.48,0.3 l-0.61,7.02l3.25,0.87c-0.34-0.87-0.48-1.73-0.4-2.6c0.14-1.65,0.87-3,2.16-4.04c1.3-1.04,2.91-1.48,4.83-1.31 c1.6,0.14,2.98,0.72,4.15,1.76c1.6,1.41,2.31,3.24,2.11,5.48c-0.16,1.79-0.76,3.21-1.82,4.26C35.98,39.92,34.63,40.49,32.98,40.56 L32.98,40.56z M28.8,25.56c13.07,0,23.67,4.16,23.67,9.28c0,5.13-10.6,9.28-23.67,9.28S5.13,39.98,5.13,34.85 C5.13,29.72,15.73,25.56,28.8,25.56L28.8,25.56L28.8,25.56z M28.8,22.49c15.9,0,28.8,6.76,28.8,15.1c0,8.34-12.9,15.1-28.8,15.1 C12.9,52.68,0,45.92,0,37.59C0,29.25,12.9,22.49,28.8,22.49L28.8,22.49z M56.39,47.65c0.78,1.37,1.21,2.83,1.21,4.33 c0,8.34-12.9,15.1-28.8,15.1C12.9,67.08,0,60.32,0,51.99c0-1.51,0.42-2.96,1.21-4.33c3.56,6.22,14.56,10.76,27.59,10.76 C41.83,58.41,52.84,53.88,56.39,47.65L56.39,47.65L56.39,47.65z M104.48,8.95l-0.33,3.75l-14.14-1.23 c1.17,1.48,1.97,3.18,2.42,5.09l-3.4-0.3c-0.23-1-0.75-2.12-1.54-3.34c-0.8-1.23-1.77-2.1-2.93-2.63l0.27-3.04L104.48,8.95 L104.48,8.95L104.48,8.95z M94.08,3.08c13.07,0,23.67,4.16,23.67,9.28c0,5.13-10.6,9.28-23.67,9.28c-13.07,0-23.67-4.16-23.67-9.28 C70.41,7.23,81.01,3.08,94.08,3.08L94.08,3.08z M94.08,0c15.9,0,28.8,6.76,28.8,15.1c0,8.34-12.9,15.1-28.8,15.1 c-15.9,0-28.8-6.76-28.8-15.1C65.28,6.76,78.18,0,94.08,0L94.08,0z M121.67,25.16c0.78,1.37,1.21,2.83,1.21,4.33 c0,8.34-12.9,15.1-28.8,15.1c-15.9,0-28.8-6.76-28.8-15.1c0-1.51,0.42-2.96,1.21-4.33c3.55,6.22,14.56,10.76,27.59,10.76 C107.11,35.93,118.12,31.39,121.67,25.16L121.67,25.16L121.67,25.16z M121.39,70.92c0.96,1.51,1.49,3.12,1.49,4.8 c0,8.34-12.9,15.1-28.8,15.1c-15.9,0-28.8-6.76-28.8-15.1c0-1.68,0.52-3.29,1.49-4.8c3.83,5.98,14.61,10.3,27.31,10.3 C106.78,81.22,117.57,76.91,121.39,70.92L121.39,70.92z M121.53,55.39c0.88,1.45,1.35,2.98,1.35,4.58c0,8.34-12.9,15.1-28.8,15.1 c-15.9,0-28.8-6.76-28.8-15.1c0-1.6,0.48-3.14,1.35-4.58c3.7,6.1,14.59,10.51,27.45,10.51S117.82,61.49,121.53,55.39L121.53,55.39 L121.53,55.39z"
+                />
+              </g>
+            </svg>
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-info">
+              Transparent Supply
+            </h5>
+            <p class="mb-3 font-normal text-gray-300">
+              Every token has a fixed supply, with no minting or inflation.
+              Supply is fully transparent and verifiable on-chain.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="gas-efficient"
+        class="container max-w-4xl mx-auto px-4 pb-2 mt-8"
+      >
+        <div
+          class="card md:card-side bg-base-100 shadow-sm opacity-0 transition-opacity duration-300 ease-in-out gas-body"
+        >
+          <figure>
+            <img
+              class=""
+              src="/static/assets/img/default_pfp0.png"
+              alt="Ninja"
+            />
+          </figure>
+          <div class="card-body w-full md:w-2/3">
+            <h2
+              class="card-title gradient-text text-3xl opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              Gas Efficient
+            </h2>
+            <p
+              class="text-lg text-info opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              Every token is deployed entirely on-chain using the
+              <a
+                class="link text-secondary/60"
+                href="https://eips.ethereum.org/EIPS/eip-1167"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EIP-1167
+              </a>
+              minimal proxy pattern for efficient and standardized contract
+              creation.
+            </p>
+            <p
+              class="text-base text-gray-500 opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              Instead of copying the full contract each time, we deploy tiny
+              proxy contracts that point to a single shared logic contract. This
+              reduces deployment gas costs by over
+              <span class="text-success text-semibold">90%</span>, often under
+              <span class="text-success text-semibold">$0.10</span>.
+            </p>
+            <p
+              class="text-xs text-gray-500 mt-2 opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              Once deployed, each proxy is immutable and fully trustless—no one
+              can change the code behind your token. Your token is yours
+              forever.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="community"
+        class="container max-w-4xl mx-auto px-4 pb-2 mt-8"
+      >
+        <div
+          class="card md:card-side bg-base-100 shadow-sm opacity-0 transition-opacity duration-300 ease-in-out animate-body"
+        >
+          <div
+            class="card-body w-full md:w-2/3 flex flex-col justify-center items-center"
+          >
+            <h2
+              class="card-title gradient-text text-3xl opacity-0 transition-opacity duration-300 ease-in-out self-start"
+            >
+              Community Driven
+            </h2>
+            <div class="flex flex-col sm:flex-row">
+              <p
+                class="text-lg text-info opacity-0 transition-opacity duration-300 ease-in-out w-full sm:w-2/3 p-4 text-justify"
+              >
+                Every token includes a built-in live chat interface, allowing
+                holders to connect, share ideas, and build community around
+                their token.
+              </p>
+              <ul class="p-4">
+                <li
+                  class="text-lg sm:text-xl text-gray-300 opacity-0 transition-opacity duration-300 ease-in-out"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 512 467.36"
+                    class="h-4 w-4 inline-block me-2"
+                  >
+                    <g fill-rule="nonzero">
+                      <path
+                        fill="#333"
+                        d="M58.327 0h254.296c-11.984 13.787-22.844 27.299-32.641 40.444H58.327c-4.929 0-9.415 2.01-12.656 5.227a17.95 17.95 0 00-5.227 12.657v350.705c0 4.868 2.04 9.331 5.288 12.579 3.264 3.263 7.75 5.304 12.595 5.304h395.345c4.815 0 9.286-2.056 12.557-5.327 3.271-3.271 5.326-7.742 5.326-12.556V211.536A1199.255 1199.255 0 00512 194.294v214.739c0 15.995-6.611 30.592-17.173 41.154-10.562 10.562-25.159 17.173-41.155 17.173H58.327c-15.996 0-30.623-6.58-41.193-17.15C6.595 439.671 0 425.082 0 409.033V58.328C0 26.298 26.298 0 58.327 0z"
+                      />
+                      <path
+                        class="fill-accent"
+                        fill=""
+                        d="M137.419 167.477l62.691-.825a10.042 10.042 0 015.427 1.513c12.678 7.329 24.639 15.69 35.789 25.121a243.712 243.712 0 0122.484 21.681c21.972-34.811 48.576-70.325 76.509-103.639 34.552-41.2 71.358-79.245 104.09-108.6a10.045 10.045 0 016.718-2.567l48.071-.039c5.579 0 10.111 4.532 10.111 10.111 0 2.752-1.108 5.259-2.896 7.077-44.311 49.249-89.776 105.68-130.969 163.496-38.09 53.466-72.596 108.194-99.23 159.612-2.553 4.945-8.644 6.894-13.588 4.341a10.07 10.07 0 01-4.693-5.105c-14.582-31.196-32.052-59.924-52.916-85.679-20.887-25.778-45.244-48.645-73.567-68.087-4.593-3.134-5.777-9.423-2.644-14.016 2.002-2.935 5.296-4.479 8.613-4.395z"
+                      />
+                    </g>
+                  </svg>
+                  <span class="">Likes</span>
+                </li>
+                <li
+                  class="text-lg sm:text-xl text-gray-300 opacity-0 transition-opacity duration-300 ease-in-out"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 512 467.36"
+                    class="h-4 w-4 inline-block me-2"
+                  >
+                    <g fill-rule="nonzero">
+                      <path
+                        fill="#333"
+                        d="M58.327 0h254.296c-11.984 13.787-22.844 27.299-32.641 40.444H58.327c-4.929 0-9.415 2.01-12.656 5.227a17.95 17.95 0 00-5.227 12.657v350.705c0 4.868 2.04 9.331 5.288 12.579 3.264 3.263 7.75 5.304 12.595 5.304h395.345c4.815 0 9.286-2.056 12.557-5.327 3.271-3.271 5.326-7.742 5.326-12.556V211.536A1199.255 1199.255 0 00512 194.294v214.739c0 15.995-6.611 30.592-17.173 41.154-10.562 10.562-25.159 17.173-41.155 17.173H58.327c-15.996 0-30.623-6.58-41.193-17.15C6.595 439.671 0 425.082 0 409.033V58.328C0 26.298 26.298 0 58.327 0z"
+                      />
+                      <path
+                        class="fill-accent"
+                        fill=""
+                        d="M137.419 167.477l62.691-.825a10.042 10.042 0 015.427 1.513c12.678 7.329 24.639 15.69 35.789 25.121a243.712 243.712 0 0122.484 21.681c21.972-34.811 48.576-70.325 76.509-103.639 34.552-41.2 71.358-79.245 104.09-108.6a10.045 10.045 0 016.718-2.567l48.071-.039c5.579 0 10.111 4.532 10.111 10.111 0 2.752-1.108 5.259-2.896 7.077-44.311 49.249-89.776 105.68-130.969 163.496-38.09 53.466-72.596 108.194-99.23 159.612-2.553 4.945-8.644 6.894-13.588 4.341a10.07 10.07 0 01-4.693-5.105c-14.582-31.196-32.052-59.924-52.916-85.679-20.887-25.778-45.244-48.645-73.567-68.087-4.593-3.134-5.777-9.423-2.644-14.016 2.002-2.935 5.296-4.479 8.613-4.395z"
+                      />
+                    </g>
+                  </svg>
+                  <span class="">Emoji</span>
+                </li>
+                <li
+                  class="text-lg sm:text-xl text-gray-300 opacity-0 transition-opacity duration-300 ease-in-out"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 512 467.36"
+                    class="h-4 w-4 inline-block me-2"
+                  >
+                    <g fill-rule="nonzero">
+                      <path
+                        fill="#333"
+                        d="M58.327 0h254.296c-11.984 13.787-22.844 27.299-32.641 40.444H58.327c-4.929 0-9.415 2.01-12.656 5.227a17.95 17.95 0 00-5.227 12.657v350.705c0 4.868 2.04 9.331 5.288 12.579 3.264 3.263 7.75 5.304 12.595 5.304h395.345c4.815 0 9.286-2.056 12.557-5.327 3.271-3.271 5.326-7.742 5.326-12.556V211.536A1199.255 1199.255 0 00512 194.294v214.739c0 15.995-6.611 30.592-17.173 41.154-10.562 10.562-25.159 17.173-41.155 17.173H58.327c-15.996 0-30.623-6.58-41.193-17.15C6.595 439.671 0 425.082 0 409.033V58.328C0 26.298 26.298 0 58.327 0z"
+                      />
+                      <path
+                        class="fill-accent"
+                        fill=""
+                        d="M137.419 167.477l62.691-.825a10.042 10.042 0 015.427 1.513c12.678 7.329 24.639 15.69 35.789 25.121a243.712 243.712 0 0122.484 21.681c21.972-34.811 48.576-70.325 76.509-103.639 34.552-41.2 71.358-79.245 104.09-108.6a10.045 10.045 0 016.718-2.567l48.071-.039c5.579 0 10.111 4.532 10.111 10.111 0 2.752-1.108 5.259-2.896 7.077-44.311 49.249-89.776 105.68-130.969 163.496-38.09 53.466-72.596 108.194-99.23 159.612-2.553 4.945-8.644 6.894-13.588 4.341a10.07 10.07 0 01-4.693-5.105c-14.582-31.196-32.052-59.924-52.916-85.679-20.887-25.778-45.244-48.645-73.567-68.087-4.593-3.134-5.777-9.423-2.644-14.016 2.002-2.935 5.296-4.479 8.613-4.395z"
+                      />
+                    </g>
+                  </svg>
+                  <span class="">Images</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <figure>
+            <img
+              class="h-auto w-64!"
+              src="/static/assets/img/chat-interface.png"
+              alt="Ninja"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section
+        id="graduation"
+        class="container max-w-4xl mx-auto px-4 pb-2 mt-8"
+      >
+        <div class="opacity-0 transition-opacity duration-300 ease-in-out animate-body">
+          <h1
+            class="text-3xl font-bold text-center mb-4 gradient-text opacity-0 transition-opacity duration-300 ease-in-out"
+          >
+            Easy Graduation
+          </h1>
+          <div class="divider"></div>
+          <p class="text-gray-400 text-format text-center opacity-0 transition-opacity duration-300 ease-in-out">At $69k market cap, tokens will be automatically graduate to UniswapV3 liquidity pool</p>
+          <p class="text-gray-400 text-format text-center opacity-0 transition-opacity duration-300 ease-in-out">This process is fully automated and on-chain with no manual intervention required.</p>
+          <p class="text-gray-400 text-format text-center opacity-0 transition-opacity duration-300 ease-in-out">A small fee of $69 is taken from the ETH in the bonding curve, with $49 going to the <span class="gradient-text">MoonNinja</span> platform and the remaining $20 going to the trader that triggered the graduation.</p>
+        </div>
+
+      </section>
+
+      <!--Socials section / cta -->
+      <section
+        id="socials"
+        class="container max-w-4xl mx-auto px-4 pb-2 mt-8"
+      >
+        <div
+          class="card md:card-side bg-base-100 shadow-sm opacity-0 transition-opacity duration-300 ease-in-out animate-body"
+        >
+          <div class="card-body w-full md:w-2/3 flex flex-col justify-center items-center">
+            <h2 
+              class="card-title gradient-text text-3xl opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              Join the Community
+            </h2>
+            <p
+              class="text-lg text-info opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              For the latest updates, community discussions, and support,
+              join our official channels.
+            </p>
+            <div class="flex flex-row items-center mt-4 gap-4">
+              <a href="https://t.me/MoonNinjaDeFi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opacity-0 transition-all duration-300 ease-in-out hover:scale-125"><svg xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd" clip-rule="evenodd"
+                viewBox="0 0 512 512" class="h-12 w-12">
+                <defs>
+                  <linearGradient id="prefix__a" gradientUnits="userSpaceOnUse" x1="256" y1="3.84" x2="256" y2="512">
+                    <stop offset="0" stop-color="#2AABEE"/>
+                    <stop offset="1" stop-color="#229ED9"/>
+                  </linearGradient>
+                </defs>
+                <circle fill="url(#prefix__a)" cx="256" cy="256" r="256"/>
+                <path fill="#fff" d="M115.88 253.3c74.63-32.52 124.39-53.95 149.29-64.31 71.1-29.57 85.87-34.71 95.5-34.88 2.12-.03 6.85.49 9.92 2.98
+                2.59 2.1 3.3 4.94 3.64 6.93.34 2 .77 6.53.43 10.08-3.85 40.48-20.52 138.71-29 184.05-3.59 19.19-10.66 25.62-17.5 26.25-14.86
+                1.37-26.15-9.83-40.55-19.27-22.53-14.76-35.26-23.96-57.13-38.37-25.28-16.66-8.89-25.81 5.51-40.77
+                3.77-3.92 69.27-63.5 70.54-68.9.16-.68.31-3.2-1.19-4.53s-3.71-.87-5.3-.51c-2.26.51-38.25 24.3-107.98 71.37-10.22
+                7.02-19.48 10.43-27.77 10.26-9.14-.2-26.72-5.17-39.79-9.42-16.03-5.21-28.77-7.97-27.66-16.82.57-4.61 6.92-9.32 19.04-14.14z"/>
+              </svg>
+              </a>
+              <a
+                href="https://x.com/MoonNinjaDefi"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="opacity-0 transition-all duration-300 ease-in-out border-1 border-gray-600 rounded-full hover:scale-125"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd"
+              viewBox="0 0 512 512" class="h-12 w-12"><path d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z"/><path fill="#fff" fill-rule="nonzero" d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z"/></svg>
+              </a>
+
+              <a
+                href="https://discord.moon.ninja"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="opacity-0 transition-all duration-300 ease-in-out hover:scale-125"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd"
+              viewBox="0 0 512 512" class="h-12 w-12"><path fill="#5865F2" d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z"/><g data-name="å¾å± 2"><g data-name="Discord Logos"><path fill="#fff" fill-rule="nonzero" d="M360.932 160.621a250.49 250.49 0 00-62.384-19.182 174.005 174.005 0 00-7.966 16.243 232.677 232.677 0 00-34.618-2.602c-11.569 0-23.196.879-34.623 2.58-2.334-5.509-5.044-10.972-7.986-16.223a252.55 252.55 0 00-62.397 19.222c-39.483 58.408-50.183 115.357-44.833 171.497a251.546 251.546 0 0076.502 38.398c6.169-8.328 11.695-17.193 16.386-26.418a161.718 161.718 0 01-25.813-12.318c2.165-1.569 4.281-3.186 6.325-4.756 23.912 11.23 50.039 17.088 76.473 17.088 26.436 0 52.563-5.858 76.475-17.09 2.069 1.689 4.186 3.306 6.325 4.756a162.642 162.642 0 01-25.859 12.352 183.919 183.919 0 0016.386 26.396 250.495 250.495 0 0076.553-38.391l-.006.006c6.278-65.103-10.724-121.529-44.94-171.558zM205.779 297.63c-14.908 0-27.226-13.53-27.226-30.174 0-16.645 11.889-30.294 27.179-30.294 15.289 0 27.511 13.649 27.249 30.294-.261 16.644-12.007 30.174-27.202 30.174zm100.439 0c-14.933 0-27.202-13.53-27.202-30.174 0-16.645 11.889-30.294 27.202-30.294 15.313 0 27.44 13.649 27.178 30.294-.261 16.644-11.984 30.174-27.178 30.174z" data-name="Discord Logo - Large - White"/></g></g></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+                
+
+    </main>
+
+    <footer
+      class="footer sm:footer-horizontal bg-base-200 text-neutral-content p-10"
+    >
+      <aside>
+        <a href="#" class="flex ms-2 md:me-24">
+          <img
+            src="/static/assets/img/mn_logo_grad_circle_notext_background.png"
+            class="h-11 me-3"
+            alt="MoonNinja Logo"
+          />
+          <span
+            class="self-center text-xl font-bold-custom sm:text-2xl whitespace-nowrap gradient-text"
+            >MoonNinja</span
+          >
+        </a>
+        <p class="text-gray-300 max-w-lg">
+          © <span id="current-year"></span> MoonNinja. All rights reserved.
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Social</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a href="https://t.me/MoonNinjaDeFi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:animate-jump hover:animate-infinite hover:animate-duration-[2000ms]"><svg xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd" clip-rule="evenodd"
+                viewBox="0 0 512 512" class="h-6 w-6">
+                <defs>
+                  <linearGradient id="prefix__a" gradientUnits="userSpaceOnUse" x1="256" y1="3.84" x2="256" y2="512">
+                    <stop offset="0" stop-color="#2AABEE"/>
+                    <stop offset="1" stop-color="#229ED9"/>
+                  </linearGradient>
+                </defs>
+                <circle fill="url(#prefix__a)" cx="256" cy="256" r="256"/>
+                <path fill="#fff" d="M115.88 253.3c74.63-32.52 124.39-53.95 149.29-64.31 71.1-29.57 85.87-34.71 95.5-34.88 2.12-.03 6.85.49 9.92 2.98
+                2.59 2.1 3.3 4.94 3.64 6.93.34 2 .77 6.53.43 10.08-3.85 40.48-20.52 138.71-29 184.05-3.59 19.19-10.66 25.62-17.5 26.25-14.86
+                1.37-26.15-9.83-40.55-19.27-22.53-14.76-35.26-23.96-57.13-38.37-25.28-16.66-8.89-25.81 5.51-40.77
+                3.77-3.92 69.27-63.5 70.54-68.9.16-.68.31-3.2-1.19-4.53s-3.71-.87-5.3-.51c-2.26.51-38.25 24.3-107.98 71.37-10.22
+                7.02-19.48 10.43-27.77 10.26-9.14-.2-26.72-5.17-39.79-9.42-16.03-5.21-28.77-7.97-27.66-16.82.57-4.61 6.92-9.32 19.04-14.14z"/>
+              </svg>
+              </a>
+              <a
+                href="https://x.com/MoonNinjaDefi"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:animate-jump hover:animate-infinite hover:animate-duration-[2000ms] border-1 border-gray-600 rounded-full"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd"
+              viewBox="0 0 512 512" class="h-6 w-6"><path d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z"/><path fill="#fff" fill-rule="nonzero" d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z"/></svg>
+              </a>
+
+              <a
+                href="https://discord.moon.ninja"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:animate-jump hover:animate-infinite hover:animate-duration-[2000ms]"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd"
+              viewBox="0 0 512 512" class="h-6 w-6"><path fill="#5865F2" d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z"/><g data-name="å¾å± 2"><g data-name="Discord Logos"><path fill="#fff" fill-rule="nonzero" d="M360.932 160.621a250.49 250.49 0 00-62.384-19.182 174.005 174.005 0 00-7.966 16.243 232.677 232.677 0 00-34.618-2.602c-11.569 0-23.196.879-34.623 2.58-2.334-5.509-5.044-10.972-7.986-16.223a252.55 252.55 0 00-62.397 19.222c-39.483 58.408-50.183 115.357-44.833 171.497a251.546 251.546 0 0076.502 38.398c6.169-8.328 11.695-17.193 16.386-26.418a161.718 161.718 0 01-25.813-12.318c2.165-1.569 4.281-3.186 6.325-4.756 23.912 11.23 50.039 17.088 76.473 17.088 26.436 0 52.563-5.858 76.475-17.09 2.069 1.689 4.186 3.306 6.325 4.756a162.642 162.642 0 01-25.859 12.352 183.919 183.919 0 0016.386 26.396 250.495 250.495 0 0076.553-38.391l-.006.006c6.278-65.103-10.724-121.529-44.94-171.558zM205.779 297.63c-14.908 0-27.226-13.53-27.226-30.174 0-16.645 11.889-30.294 27.179-30.294 15.289 0 27.511 13.649 27.249 30.294-.261 16.644-12.007 30.174-27.202 30.174zm100.439 0c-14.933 0-27.202-13.53-27.202-30.174 0-16.645 11.889-30.294 27.202-30.294 15.313 0 27.44 13.649 27.178 30.294-.261 16.644-11.984 30.174-27.178 30.174z" data-name="Discord Logo - Large - White"/></g></g></svg>
+              </a>
+        </div>
+      </nav>
+    </footer>
+
+    <script defer src="/static/assets/js/lander.js?v=2"></script>
   </body>
 </html>
