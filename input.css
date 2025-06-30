@@ -1,24 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source(none);
+@import "tailwindcss-animated";
+@source "./*.{html}";
+@source "./static/assets/js/**/*.{js,ts}";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "dracula";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(14% 0.005 285.823);
+  --color-base-200: oklch(21% 0.006 285.885);
+  --color-base-300: oklch(27% 0.006 286.033);
+  --color-base-content: oklch(96% 0.001 286.375);
+  --color-primary: oklch(54% 0.281 293.009);
+  --color-primary-content: oklch(97% 0.014 343.198);
+  --color-secondary: oklch(76% 0.177 163.223);
+  --color-secondary-content: oklch(98% 0.014 180.72);
+  --color-accent: oklch(76% 0.233 130.85);
+  --color-accent-content: oklch(98% 0.031 120.757);
+  --color-neutral: oklch(27% 0.006 286.033);
+  --color-neutral-content: oklch(98% 0 0);
+  --color-info: oklch(70% 0.183 293.541);
+  --color-info-content: oklch(30% 0.056 229.695);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(26% 0.051 172.552);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(27% 0.077 45.635);
+  --color-error: oklch(44% 0.177 26.899);
+  --color-error-content: oklch(28% 0.109 3.907);
+  --radius-selector: 0rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "tailwindcss-animated";
 
 @font-face {
-  font-family: "Proxima Nova";
-  src: url("/assets/ProximaNova-Regular-67f0feaa6ec39a98.otf")
-    format("opentype");
+  font-family: "Metropolis";
+  src: url("/static/assets/fonts/Metropolis-Regular.woff2") format("woff2"),
+    url("/static/assets/fonts/Metropolis-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  unicode-range: U+0000-007F, /* Basic Latin (ASCII) */ U+0080-00FF,
+    /* Latin-1 Supplement */ U+0100-017F, /* Latin Extended-A */ U+0180-024F,
+    /* Latin Extended-B */ U+2000-206F, /* General Punctuation */ U+20A0-20CF; /* Currency Symbols */
 }
 
 @font-face {
-  font-family: "Proxima Nova Bold";
-  src: url("/assets/ProximaNova-Bold-67d777977b0ea3bb.otf") format("opentype");
+  font-family: "Metropolis Bold";
+  src: url("/static/assets/fonts/Metropolis-Bold.woff2") format("woff2"),
+    url("/static/assets/fonts/Metropolis-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Twemoji Mozilla";
+  src: url("/static/assets/fonts/Twemoji.Mozilla.woff2") format("woff2"),
+    url("/static/assets/fonts/Twemoji.Mozilla.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+1F000-1F9FF, /* Most emoji block */ U+2600-26FF,
+    /* Misc symbols (☀☂✈) */ U+2700-27BF, /* Dingbats (✂✉✔) */ U+FE0F,
+    /* Variation Selector-16 (emoji styling) */ U+1FA70-1FAFF; /* Supplemental Symbols and Pictographs (🩰🪐🛻) */
+}
+
+:root {
+  --font-family-emoji: "Twemoji Mozilla", "Apple Color Emoji", "Segoe UI Emoji",
+    "Noto Color Emoji";
+}
+
 body {
-  background-color: #040410;
-  font-family: "Proxima Nova", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
+  font-family: "Metropolis", "Twemoji Mozilla", sans-serif;
+}
+
+@layer utilities {
+  .font-bold-custom {
+    @apply font-bold;
+    font-family: "Metropolis Bold", sans-serif;
+  }
 }
